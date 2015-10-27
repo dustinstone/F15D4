@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E6A84B9C-915F-F919-249B-580ED2986701" name="F15.D4_Comment">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-19 21:32:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment_id" id="0B2DA4CD-5A24-DF6C-A343-946630E9863F">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-19 21:32:25 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="9C391BA2-790D-80B0-D278-58CD71A8687A">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-19 21:32:54 UTC</createdTime>
+<generatorID>5897CE91-B7B3-912A-301D-105DC221184F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>71DAED66-DA59-672C-3B75-2BA4EC6F57BF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="F0DBC2D1-E822-624D-3BDB-FD6AA839A1EF">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:26:14 UTC</createdTime>
+<generatorID>01AD4370-A02D-A055-3D19-1E9CDB0D5921</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5B2FEDCE-8860-BB15-5DAE-BC0FF0B855CC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="effective_date" id="6FB6DC68-FDA8-C730-B32D-1EE2EAAE41FB">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:26:33 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comment" id="F563D50C-2996-3E08-58F0-E41D2874FC43">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:26:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0EDADE1C-DA77-F989-9B86-1A480536BF89" name="Comment PK">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-19 21:32:30 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0B2DA4CD-5A24-DF6C-A343-946630E9863F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

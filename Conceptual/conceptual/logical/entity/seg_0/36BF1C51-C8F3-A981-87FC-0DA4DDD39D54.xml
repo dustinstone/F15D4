@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="36BF1C51-C8F3-A981-87FC-0DA4DDD39D54" name="F15.D4_RFE_Approval">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 21:29:27 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="approval_id" id="B7AF2AAE-0E36-543F-A8DF-8A1B1B2555D2">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 21:29:49 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_type" id="BEF8BFFC-5EC1-3855-3E30-239E71713281">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 21:30:12 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="A6788BA3-D9AE-E446-3900-98E29BF3AA68">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 21:36:17 UTC</createdTime>
+<generatorID>3D3C3978-6C3F-C2AE-5247-063475AEC09A</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>71DAED66-DA59-672C-3B75-2BA4EC6F57BF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lab_id" id="10CBE022-8B65-B28F-7EF3-7225DCB6FF8D">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 21:38:35 UTC</createdTime>
+<generatorID>3BCB878D-78CB-ED12-E0CD-A41FC0AB7AB1</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<referedAttribute>35253776-C5DE-C2BF-5F1A-C1C3743B6281</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C5C5EEEE-6740-91B7-2485-6F3224EBD9EB" name="RFE_Approval PK">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 21:29:57 UTC</createdTime>
+<ownerDesignName>conceptual</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B7AF2AAE-0E36-543F-A8DF-8A1B1B2555D2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

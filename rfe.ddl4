@@ -1,0 +1,261 @@
+drop view F15.D4_Employee_View ;
+drop view F15.D4_Lab_Employee_View ;
+drop view F15.D4_Lab_Director_View ;
+drop view F15.D4_Sys_Admin_View ;
+drop view F15.D4_Chairperson_View ;
+drop view F15.D4_Executive_Director_View ;
+
+create view F15.D4_Employee_View as
+SELECT
+    employee_id,
+    active,
+    name,
+    email,
+    office_num,
+    phone_number,
+    status,
+    status_effective_date,
+    type
+FROM F15.D4_Employee where type = 'Employee' ;
+
+create or replace TRIGGER F15.D4_Employee_Trigger
+    INSTEAD OF insert ON F15.D4_Employee_View
+    FOR EACH ROW
+BEGIN
+    insert into F15.D4_Employee(
+                employee_id,
+                active,
+                name,
+                email,
+                office_num,
+                phone_number,
+                status,
+                status_effective_date,
+                type)
+                 VALUES (
+                :NEW.employee_id,
+                :NEW.active,
+                :NEW.name,
+                :NEW.email,
+                :NEW.office_num,
+                :NEW.phone_number,
+                :NEW.status,
+                :NEW.status_effective_date,
+                'Employee'
+                ) ;
+END ;
+/
+
+create view F15.D4_Lab_Employee_View as
+SELECT
+    employee_id,
+    active,
+    name,
+    email,
+    office_num,
+    phone_number,
+    status,
+    status_effective_date,
+    lab_id,
+    type
+FROM F15.D4_Employee where type = 'Lab Employee' ;
+
+create or replace TRIGGER F15.D4_Lab_Employee_Trigger
+    INSTEAD OF insert ON F15.D4_Lab_Employee_View
+    FOR EACH ROW
+BEGIN
+    insert into F15.D4_Employee(
+                employee_id,
+                active,
+                name,
+                email,
+                office_num,
+                phone_number,
+                status,
+                status_effective_date,
+                lab_id,
+                type)
+                 VALUES (
+                :NEW.employee_id,
+                :NEW.active,
+                :NEW.name,
+                :NEW.email,
+                :NEW.office_num,
+                :NEW.phone_number,
+                :NEW.status,
+                :NEW.status_effective_date,
+                :NEW.lab_id,
+                'Lab Employee'
+                ) ;
+END ;
+/
+
+create view F15.D4_Lab_Director_View as
+SELECT
+    employee_id,
+    active,
+    name,
+    email,
+    office_num,
+    phone_number,
+    status,
+    status_effective_date,
+    lab_id,
+    type
+FROM F15.D4_Employee where type = 'Lab Director' ;
+
+create or replace TRIGGER F15.D4_Lab_Director_Trigger
+    INSTEAD OF insert ON F15.D4_Lab_Director_View
+    FOR EACH ROW
+BEGIN
+    insert into F15.D4_Employee(
+                employee_id,
+                active,
+                name,
+                email,
+                office_num,
+                phone_number,
+                status,
+                status_effective_date,
+                lab_id,
+                type)
+                 VALUES (
+                :NEW.employee_id,
+                :NEW.active,
+                :NEW.name,
+                :NEW.email,
+                :NEW.office_num,
+                :NEW.phone_number,
+                :NEW.status,
+                :NEW.status_effective_date,
+                :NEW.lab_id,
+                'Lab Director'
+                ) ;
+END ;
+/
+
+create view F15.D4_Sys_Admin_View as
+SELECT
+    employee_id,
+    active,
+    name,
+    email,
+    office_num,
+    phone_number,
+    status,
+    status_effective_date,
+    lab_id,
+    type
+FROM F15.D4_Employee where type = 'Sys Admin' ;
+
+create or replace TRIGGER F15.D4_Sys_Admin_Trigger
+    INSTEAD OF insert ON F15.D4_Sys_Admin_View
+    FOR EACH ROW
+BEGIN
+    insert into F15.D4_Employee(
+                employee_id,
+                active,
+                name,
+                email,
+                office_num,
+                phone_number,
+                status,
+                status_effective_date,
+                lab_id,
+                type)
+                 VALUES (
+                :NEW.employee_id,
+                :NEW.active,
+                :NEW.name,
+                :NEW.email,
+                :NEW.office_num,
+                :NEW.phone_number,
+                :NEW.status,
+                :NEW.status_effective_date,
+                :NEW.lab_id,
+                'Sys_Admin'
+                ) ;
+END ;
+/
+
+create view F15.D4_Chairperson_View as
+SELECT
+    employee_id,
+    active,
+    name,
+    email,
+    office_num,
+    phone_number,
+    status,
+    status_effective_date,
+    type
+FROM F15.D4_Employee where type = 'Chairperson' ;
+
+create or replace TRIGGER F15.D4_Chairperson_Trigger
+    INSTEAD OF insert ON F15.D4_Chairperson_View
+    FOR EACH ROW
+BEGIN
+    insert into F15.D4_Employee(
+                employee_id,
+                active,
+                name,
+                email,
+                office_num,
+                phone_number,
+                status,
+                status_effective_date,
+                type)
+                 VALUES (
+                :NEW.employee_id,
+                :NEW.active,
+                :NEW.name,
+                :NEW.email,
+                :NEW.office_num,
+                :NEW.phone_number,
+                :NEW.status,
+                :NEW.status_effective_date,
+                'Chairperson'
+                ) ;
+END ;
+/
+
+create view F15.D4_Executive_Director_View as
+SELECT
+    employee_id,
+    active,
+    name,
+    email,
+    office_num,
+    phone_number,
+    status,
+    status_effective_date,
+    type
+FROM F15.D4_Employee where type = 'Executive_Director' ;
+
+create or replace TRIGGER F15.D4_Executive_Director_Trigger
+    INSTEAD OF insert ON F15.D4_Executive_Director_View
+    FOR EACH ROW
+BEGIN
+    insert into F15.D4_Employee(
+                employee_id,
+                active,
+                name,
+                email,
+                office_num,
+                phone_number,
+                status,
+                status_effective_date,
+                type)
+                 VALUES (
+                :NEW.employee_id,
+                :NEW.active,
+                :NEW.name,
+                :NEW.email,
+                :NEW.office_num,
+                :NEW.phone_number,
+                :NEW.status,
+                :NEW.status_effective_date,
+                'Executive_Director'
+                ) ;
+END ;
+/

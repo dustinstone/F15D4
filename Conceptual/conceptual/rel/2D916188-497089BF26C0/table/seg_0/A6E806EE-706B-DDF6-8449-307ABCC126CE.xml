@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6E806EE-706B-DDF6-8449-307ABCC126CE" name="Comment">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>E6A84B9C-915F-F919-249B-580ED2986701</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comment_id" id="C46A489E-929E-0C07-8208-B8D0C41E4FD2">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>0B2DA4CD-5A24-DF6C-A343-946630E9863F</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RFE_rfe_id" id="DBB48659-F2E8-D8C9-0119-BE8BA98DFCE6">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>9C391BA2-790D-80B0-D278-58CD71A8687A</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AAF7B347-A937-46E5-1D1E-34291F95F95F" referredColumn="411BC793-298B-2369-C090-0AD85118F61F"/>
+</associations>
+</Column>
+<Column name="Employee_employee_id" id="5A18C1E8-3DDE-B18A-6821-94B600D19D90">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>F0DBC2D1-E822-624D-3BDB-FD6AA839A1EF</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="320A8A40-BB65-034E-9B9B-4094E20C54E0" referredColumn="39A9F55D-4645-ACD6-5C95-3304F04A5230"/>
+</associations>
+</Column>
+<Column name="effective_date" id="D8AE8507-2E2B-4359-5644-CB06F303E96E">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>6FB6DC68-FDA8-C730-B32D-1EE2EAAE41FB</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comment" id="B453E86E-5E41-762E-653C-B63D1B245EF3">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>F563D50C-2996-3E08-58F0-E41D2874FC43</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8B81794-BFE0-D14E-2220-260A1A1928B6" name="Comment_PK">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>0EDADE1C-DA77-F989-9B86-1A480536BF89</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C46A489E-929E-0C07-8208-B8D0C41E4FD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA579974-E779-7F9B-95D1-F63DD9DD2E5F" name="Comment_Employee_FK">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>01AD4370-A02D-A055-3D19-1E9CDB0D5921</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A18C1E8-3DDE-B18A-6821-94B600D19D90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AC8D01A-5D52-5A80-180D-425F4D6DDB93" name="Comment_RFE_FK">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:16 UTC</createdTime>
+<generatorID>5897CE91-B7B3-912A-301D-105DC221184F</generatorID>
+<ownerDesignName>conceptual</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBB48659-F2E8-D8C9-0119-BE8BA98DFCE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

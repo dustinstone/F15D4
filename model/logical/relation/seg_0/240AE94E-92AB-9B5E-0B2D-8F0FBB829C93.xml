@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="StatusHistory_Employee" directorySegmentName="seg_0" id="240AE94E-92AB-9B5E-0B2D-8F0FBB829C93">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:06:32 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<sourcePk>DF3DCEDD-295C-252E-61F5-22DB144EDDE6</sourcePk>
+<targetPk>45AAFE8E-D032-F9D9-9D51-59FC9DFC1520</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>71957E0A-5A63-D83A-E3D5-4FF7EE055F3F</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>5F3BACBB-EB59-A962-1B02-67730D464F73</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
