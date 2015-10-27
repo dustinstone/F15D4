@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25FB5DF7-3CA4-55FD-2BF0-D88066761E30" name="F15_D4_RFE_Task">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>96CFA90C-A7A5-4DED-257C-5CBE5C5EB5F0</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>rfe_task</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="task_id" id="0A22530F-7EE8-A5A0-D73C-52DAE84C0E43">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>BA9A984D-80A7-27F6-382B-C28B776958F5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="effective_date" id="F4734C55-82E3-3B09-D27B-D4C42266D543">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>13448B09-0AEE-FC49-AFD2-9AFE7964834F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="abbv" id="0F4936B2-6ADB-1ED8-207E-C92A0603A1F2">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>DC440369-9A70-0603-88F1-0F14B9BE969B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="17131A3E-2900-170E-2BD6-9EDDD8A14120">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>8CD64B21-5DB5-AEF5-C8AF-A561C084A115</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rfe_id" id="AEB8D1AE-9A09-6FC8-70FF-A67313D8FF1A">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>2AC9AEE6-53B1-8932-7BE2-6B4330A94E70</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D66CCCD2-3CDC-0F46-73AF-9B2C9322BCEA" referredColumn="411BC793-298B-2369-C090-0AD85118F61F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61224007-5234-BD34-FEF5-672510B8FECD" name="RFE_Task_PK">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:15 UTC</createdTime>
+<generatorID>9901164B-B8F2-11CA-53E4-23ACFCEBE65E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0A22530F-7EE8-A5A0-D73C-52DAE84C0E43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEF1DFA3-D142-1947-A6D8-F33887DFC253" name="RFE_Task_RFE_FK">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 22:44:16 UTC</createdTime>
+<generatorID>5D6BE534-BF3A-3F97-78AF-2E3040111845</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AEB8D1AE-9A09-6FC8-70FF-A67313D8FF1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
