@@ -154,23 +154,9 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="type" id="8F87FCCA-E364-CC0A-7595-27256367979D">
+<Attribute name="lab_id" id="6C97A7ED-5624-D251-E623-6346CE16A368">
 <createdBy>sean</createdBy>
-<createdTime>2015-10-26 22:12:12 UTC</createdTime>
-<ownerDesignName>conceptual</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
-<ownDataTypeParameters>255,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="lab_id" id="9829CC16-0498-2193-0116-5C3050F49784">
-<createdBy>sean</createdBy>
-<createdTime>2015-10-26 22:32:42 UTC</createdTime>
+<createdTime>2015-10-27 21:21:49 UTC</createdTime>
 <generatorID>39B3E343-2B75-FA21-814F-223C5345B1E9</generatorID>
 <ownerDesignName>conceptual</ownerDesignName>
 <engineerTo>
