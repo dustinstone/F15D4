@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="90D814FD-5C90-6CCD-22B7-47F302218692" name="F15.D4_Status">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<generatorID>2D79E1AC-78DA-F788-2065-EBE202CBEA8F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>status</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="status_id" id="D7344551-E514-5E69-68B5-BE7471176987">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<generatorID>E074B289-56C7-0D84-5CD3-948A20257CB9</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_code" id="04BC2ADB-C86F-E7C2-2E85-44E19450928F">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<generatorID>D0805BB9-710E-30E9-0503-1BCD651C64D8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rfe_id" id="309F35A0-761C-D8A3-181A-B0017409D230">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<generatorID>C4085B0A-7A4C-7BB6-1703-A95CD5BE5E9D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E137583-BA84-3D54-37C7-8F8BD343C118" referredColumn="F04645A1-D644-8BC7-846B-8A18F024D352"/>
+</associations>
+</Column>
+<Column name="effective_date" id="C7380638-3A41-A6D6-46A3-F892E7FC2FBA">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<generatorID>1A46324F-B91E-000C-BE05-1FDD6BA2E4A0</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CF54E9C1-49F2-E114-5BE2-6C9E15B5211F" name="F15.D4_Status_PK">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<generatorID>D9DD0774-0A2C-9C4D-1E5E-B08CB7152373</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7344551-E514-5E69-68B5-BE7471176987"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11F982C9-0587-55E0-6193-657BF675E7B4" name="F15.D4_Status__IDX">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>D84E635E-28C2-6355-F808-A1118CBD91FB</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="309F35A0-761C-D8A3-181A-B0017409D230"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AB896F5-0404-7A5F-DB09-1B579DF09C71" name="F15.D4_Status_F15.D4_RFE_FK">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<generatorID>D84E635E-28C2-6355-F808-A1118CBD91FB</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="309F35A0-761C-D8A3-181A-B0017409D230"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0057BF47-1A45-187E-F534-1BDCDDB62F48" name="RFE_Contact">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<ordsAlias>rfe_contacts</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="employee_id" id="D075B3B2-508A-A1EE-E307-1CD31EA72C89">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C8083810-166A-DB83-D207-7D6975D01EEC" referredColumn="B36C3028-E630-7C24-52B4-82AA0C0DEED2"/>
+</associations>
+</Column>
+<Column name="rfe_id" id="2FFF6DE3-297C-4165-5284-146285335B98">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E864D7EB-80BD-A268-D040-3379664EECCB" referredColumn="F04645A1-D644-8BC7-846B-8A18F024D352"/>
+</associations>
+</Column>
+<Column name="rfe_contact_id" id="46AEAE2A-42D8-E62B-976E-043F83AC3B7C">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:45:48 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98B5B6BA-71A2-A1AF-4E43-11BBADD542F9" name="RFE_Contacts_PK">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46AEAE2A-42D8-E62B-976E-043F83AC3B7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16631572-05CC-CBBC-BCDD-1497B3689962" name="FK_ASS_6">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<generatorID>5AB270E3-D89E-A7E1-4691-3DA65D6D7646</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D075B3B2-508A-A1EE-E307-1CD31EA72C89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="784D8446-EF96-7BA2-C5B5-18A6D9EC1A42" name="FK_ASS_7">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-27 21:44:13 UTC</createdTime>
+<generatorID>5AB270E3-D89E-A7E1-4691-3DA65D6D7646</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FFF6DE3-297C-4165-5284-146285335B98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
