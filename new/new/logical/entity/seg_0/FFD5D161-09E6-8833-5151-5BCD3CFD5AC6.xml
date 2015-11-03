@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FFD5D161-09E6-8833-5151-5BCD3CFD5AC6" name="F15D4_Comment">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:36:45 UTC</createdTime>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment_id" id="B430F88B-8906-3A7D-0958-E3DF0C87EBDC">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:36:54 UTC</createdTime>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="C300C015-5186-F913-8367-BFC83F0B2A95">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:37:07 UTC</createdTime>
+<generatorID>1134A1CC-8237-6F24-5D1B-C994A86947FB</generatorID>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<referedAttribute>8F91BA49-E038-97F3-3422-080D124871C9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="BBB16FCE-6BB1-73CB-C592-8010756535D2">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:42:56 UTC</createdTime>
+<generatorID>272A26F4-7FC6-C49C-5161-D0226A0CC9BC</generatorID>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>18F4D98A-B983-E498-C004-0A83E81016DD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3770A4FB-C6A5-EB67-69B8-5DBE0EF6B4CB" name="F15D4_Comment PK">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:37:00 UTC</createdTime>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B430F88B-8906-3A7D-0958-E3DF0C87EBDC</attributeRef>
+<attributeRef>C300C015-5186-F913-8367-BFC83F0B2A95</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

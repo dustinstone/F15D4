@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Employee_Comments" directorySegmentName="seg_0" id="272A26F4-7FC6-C49C-5161-D0226A0CC9BC">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:42:56 UTC</createdTime>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<sourcePk>4EAE1E4C-68DF-6CD6-0205-9A3D26905BB0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AA528A17-BD28-CF6D-CA71-0307AFA38EA1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FFD5D161-09E6-8833-5151-5BCD3CFD5AC6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

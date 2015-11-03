@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RFE_Approvers" directorySegmentName="seg_0" id="73D3AF2D-1522-DB8D-A430-92E6EF66F3D1">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:24:48 UTC</createdTime>
+<notes>Approvers</notes>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>AA528A17-BD28-CF6D-CA71-0307AFA38EA1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>50A57D45-1DD4-DFA1-3492-B950EEBC51D8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

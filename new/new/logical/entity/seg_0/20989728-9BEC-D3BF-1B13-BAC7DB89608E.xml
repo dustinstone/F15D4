@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="20989728-9BEC-D3BF-1B13-BAC7DB89608E" name="F15D4_StatusHistory">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:31:38 UTC</createdTime>
+<notes>Entry goes in here every time the status of an RFE changes. It&apos;s just a log.</notes>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="statushistory_id" id="DC1B6DE8-7272-44F9-52AB-AE752ACDB1D8">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:31:57 UTC</createdTime>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="2D4F0729-7C54-1E8B-8D0C-0B6207FDB7C9">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:32:29 UTC</createdTime>
+<generatorID>BCE928CA-15A8-8BC5-794C-2454CEDA5BD5</generatorID>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8F91BA49-E038-97F3-3422-080D124871C9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="272AEE07-7159-FA58-2413-386A6EF24ABA" name="F15D4_StatusHistory PK">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:32:08 UTC</createdTime>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DC1B6DE8-7272-44F9-52AB-AE752ACDB1D8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

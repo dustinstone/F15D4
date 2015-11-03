@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Employee_RFEs" directorySegmentName="seg_0" id="6DD4DF87-DE02-E0A0-EA3E-A757BD96F58B">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-02 22:24:03 UTC</createdTime>
+<notes>Requestor</notes>
+<ownerDesignName>new</ownerDesignName>
+<engineerTo>
+<item key="0EAA9782-2F20-5E26-BAE2-D92A92034EBB" value="true"/>
+</engineerTo>
+<sourcePk>4EAE1E4C-68DF-6CD6-0205-9A3D26905BB0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AA528A17-BD28-CF6D-CA71-0307AFA38EA1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>50A57D45-1DD4-DFA1-3492-B950EEBC51D8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
