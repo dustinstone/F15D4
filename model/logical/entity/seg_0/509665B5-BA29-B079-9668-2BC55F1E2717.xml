@@ -42,21 +42,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="status_id" id="9E942069-5D27-2102-CE1C-BEC9B63889DF">
-<createdBy>sean</createdBy>
-<createdTime>2015-10-26 21:59:10 UTC</createdTime>
-<generatorID>D84E635E-28C2-6355-F808-A1118CBD91FB</generatorID>
-<ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>E074B289-56C7-0D84-5CD3-948A20257CB9</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="explanation" id="27512A13-2228-03F0-867B-38FA24207CE7">
 <createdBy>sean</createdBy>
 <createdTime>2015-10-26 22:15:24 UTC</createdTime>
@@ -108,6 +93,19 @@
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>5B2FEDCE-8860-BB15-5DAE-BC0FF0B855CC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_code" id="1FDC9FB7-915A-A331-495F-9DCA0CDDEF19">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:34:50 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

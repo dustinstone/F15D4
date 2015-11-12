@@ -8,7 +8,6 @@
    <object objectType="Entity" objectID="509665B5-BA29-B079-9668-2BC55F1E2717" name="F15.D4_RFE" seqName="seg_0"/>
    <object objectType="Entity" objectID="36BF1C51-C8F3-A981-87FC-0DA4DDD39D54" name="F15.D4_RFE_Approval" seqName="seg_0"/>
    <object objectType="Entity" objectID="96CFA90C-A7A5-4DED-257C-5CBE5C5EB5F0" name="F15.D4_RFE_Task" seqName="seg_0"/>
-   <object objectType="Entity" objectID="2D79E1AC-78DA-F788-2065-EBE202CBEA8F" name="F15.D4_Status" seqName="seg_0"/>
    <object objectType="Entity" objectID="71957E0A-5A63-D83A-E3D5-4FF7EE055F3F" name="F15.D4_StatusHistory" seqName="seg_0"/>
    <object objectType="Entity" objectID="04BEA2C6-71C4-9899-FDFD-38316A6025C8" name="F15D4_Auth" seqName="seg_0"/>
    <object objectType="Relation" objectID="233D7385-2BCC-9358-7B53-E1F5CD381765" name="Auth_Employees" seqName="seg_0"/>
@@ -21,9 +20,6 @@
    <object objectType="Relation" objectID="5897CE91-B7B3-912A-301D-105DC221184F" name="RFE_Comments" seqName="seg_0"/>
    <object objectType="Relation" objectID="5AB270E3-D89E-A7E1-4691-3DA65D6D7646" name="RFE_Contacts" seqName="seg_0"/>
    <object objectType="Relation" objectID="DA452289-DA54-1112-DF68-AAE3286E832B" name="RFE_Documents" seqName="seg_0"/>
-   <object objectType="Relation" objectID="D84E635E-28C2-6355-F808-A1118CBD91FB" name="RFE_Status" seqName="seg_0"/>
-   <object objectType="Relation" objectID="BAC4697C-5ADE-C6E5-4AE2-188194AD3850" name="RFE_StatusHistory" seqName="seg_0"/>
    <object objectType="Relation" objectID="5D6BE534-BF3A-3F97-78AF-2E3040111845" name="RFE_Tasks" seqName="seg_0"/>
    <object objectType="Relation" objectID="240AE94E-92AB-9B5E-0B2D-8F0FBB829C93" name="StatusHistory_Employee" seqName="seg_0"/>
-   <object objectType="Relation" objectID="2A440F1E-8EE5-6154-782C-F57EE200F359" name="Status_StatusHistory" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>
