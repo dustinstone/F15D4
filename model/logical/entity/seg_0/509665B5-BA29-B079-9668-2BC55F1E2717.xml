@@ -111,6 +111,21 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="status_history_id" id="D74BC777-3177-378F-8B00-7FB431F14C96">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:37:24 UTC</createdTime>
+<generatorID>C7F78339-45F8-B0E5-B081-0F1900300BED</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5BE988A1-7CC6-FEEF-B361-C9CF9E51BD6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="BA9C3995-840B-5C53-8685-5D7A3AA9E5B2" name="RFE PK">
