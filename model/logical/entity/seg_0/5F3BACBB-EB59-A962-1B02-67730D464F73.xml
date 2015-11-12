@@ -183,6 +183,21 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="auth_id" id="CC83454D-5B51-577F-87FC-4091D01B85BB">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:07:59 UTC</createdTime>
+<generatorID>233D7385-2BCC-9358-7B53-E1F5CD381765</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>87C738AD-1FEF-0082-17CB-355FBE69E634</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="45AAFE8E-D032-F9D9-9D51-59FC9DFC1520" name="Employee PK">
