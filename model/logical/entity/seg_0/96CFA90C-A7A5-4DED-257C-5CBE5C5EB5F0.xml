@@ -68,21 +68,6 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rfe_id" id="2AC9AEE6-53B1-8932-7BE2-6B4330A94E70">
-<createdBy>sean</createdBy>
-<createdTime>2015-10-26 22:18:49 UTC</createdTime>
-<generatorID>5D6BE534-BF3A-3F97-78AF-2E3040111845</generatorID>
-<ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>71DAED66-DA59-672C-3B75-2BA4EC6F57BF</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="9901164B-B8F2-11CA-53E4-23ACFCEBE65E" name="RFE_Task PK">
