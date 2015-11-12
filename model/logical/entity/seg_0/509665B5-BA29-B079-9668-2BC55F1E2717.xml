@@ -27,21 +27,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="requestor_id" id="40164837-ED31-E48D-6C7E-815DAE9DB5E5">
-<createdBy>sean</createdBy>
-<createdTime>2015-10-26 21:23:59 UTC</createdTime>
-<generatorID>0DD4B5D0-BD42-B57B-CAC6-8A17D3E18FF8</generatorID>
-<ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>5B2FEDCE-8860-BB15-5DAE-BC0FF0B855CC</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="lab_id" id="D982E64A-5442-A53B-F03E-5E345B34A2DC">
 <createdBy>sean</createdBy>
 <createdTime>2015-10-26 21:49:36 UTC</createdTime>
@@ -111,6 +96,21 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="7217CEBD-5F69-A97D-1D9E-9351E0A2FB2B">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:11:42 UTC</createdTime>
+<generatorID>CE4AD969-17EE-95A0-D35D-80FC1F970DC2</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5B2FEDCE-8860-BB15-5DAE-BC0FF0B855CC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

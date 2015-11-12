@@ -41,21 +41,6 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rfe_id" id="C93C829E-1558-C378-A269-610093E7A531">
-<createdBy>sean</createdBy>
-<createdTime>2015-10-26 21:23:49 UTC</createdTime>
-<generatorID>0DD4B5D0-BD42-B57B-CAC6-8A17D3E18FF8</generatorID>
-<ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>71DAED66-DA59-672C-3B75-2BA4EC6F57BF</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="status_history_id" id="176942CB-92C6-BC47-064C-66A3A08F06A7">
 <createdBy>sean</createdBy>
 <createdTime>2015-10-26 22:06:32 UTC</createdTime>
