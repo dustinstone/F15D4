@@ -1,5 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="2D79E1AC-78DA-F788-2065-EBE202CBEA8F" name="F15.D4_StatusCode" seqName="seg_0"/>
    <object objectType="Entity" objectID="04BEA2C6-71C4-9899-FDFD-38316A6025C8" name="F15D4_Auth" seqName="seg_0"/>
    <object objectType="Entity" objectID="E6A84B9C-915F-F919-249B-580ED2986701" name="F15D4_Comment" seqName="seg_0"/>
    <object objectType="Entity" objectID="F796A95B-71F9-5512-43CC-D0A88C8ECC63" name="F15D4_Document" seqName="seg_0"/>
@@ -20,7 +21,14 @@
    <object objectType="Relation" objectID="5897CE91-B7B3-912A-301D-105DC221184F" name="RFE_Comments" seqName="seg_0"/>
    <object objectType="Relation" objectID="5AB270E3-D89E-A7E1-4691-3DA65D6D7646" name="RFE_Contacts" seqName="seg_0"/>
    <object objectType="Relation" objectID="DA452289-DA54-1112-DF68-AAE3286E832B" name="RFE_Documents" seqName="seg_0"/>
-   <object objectType="Relation" objectID="C7F78339-45F8-B0E5-B081-0F1900300BED" name="RFE_StatusHistory" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0DD4B5D0-BD42-B57B-CAC6-8A17D3E18FF8" name="RFE_Requestor" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D84E635E-28C2-6355-F808-A1118CBD91FB" name="RFE_Status" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BAC4697C-5ADE-C6E5-4AE2-188194AD3850" name="RFE_StatusHistory" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C7F78339-45F8-B0E5-B081-0F1900300BED" name="RFE_StatusHistoryv2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5D6BE534-BF3A-3F97-78AF-2E3040111845" name="RFE_Tasks" seqName="seg_0"/>
    <object objectType="Relation" objectID="CF330E1C-E61A-FA21-47D9-F36D584A443B" name="RFEs_Tasks" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5B32DDC0-1E44-4ACD-6BFB-F32C56F35612" name="StatusCode_RFEs" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0A9257B6-A0B6-256C-2A71-7B57A4AD31B2" name="StatusCode_StatusHistories" seqName="seg_0"/>
    <object objectType="Relation" objectID="240AE94E-92AB-9B5E-0B2D-8F0FBB829C93" name="StatusHistory_Employee" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2A440F1E-8EE5-6154-782C-F57EE200F359" name="Status_StatusHistory" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>
