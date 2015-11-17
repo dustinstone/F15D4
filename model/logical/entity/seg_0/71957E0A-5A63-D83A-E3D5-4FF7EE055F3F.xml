@@ -3,9 +3,6 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-10-19 21:53:51 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,24 +16,6 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-10-19 21:54:03 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="employee_id" id="E82EC04C-D944-83C3-48A8-4AB2148F470B">
-<createdBy>sean</createdBy>
-<createdTime>2015-10-26 22:06:40 UTC</createdTime>
-<generatorID>240AE94E-92AB-9B5E-0B2D-8F0FBB829C93</generatorID>
-<ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>5B2FEDCE-8860-BB15-5DAE-BC0FF0B855CC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -46,9 +25,6 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-11-12 23:30:18 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -59,25 +35,31 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-11-12 23:35:09 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rfe_id" id="3B4F9AFC-55A2-C695-0591-5A48A995B2D0">
+<Attribute name="rfe_id1" id="28142CFB-5CFA-B370-EA0A-FA34C0EAAC3B">
 <createdBy>sean</createdBy>
-<createdTime>2015-11-12 23:37:14 UTC</createdTime>
-<generatorID>C7F78339-45F8-B0E5-B081-0F1900300BED</generatorID>
+<createdTime>2015-11-13 22:04:36 UTC</createdTime>
+<generatorID>BAC4697C-5ADE-C6E5-4AE2-188194AD3850</generatorID>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>71DAED66-DA59-672C-3B75-2BA4EC6F57BF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="23E2A99E-51DE-4ED3-36EB-453CF9212EDA">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-13 22:14:47 UTC</createdTime>
+<generatorID>25A08B39-B389-EBA7-6B93-CF5F521309D1</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5B2FEDCE-8860-BB15-5DAE-BC0FF0B855CC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -89,9 +71,6 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-10-19 21:54:09 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>5BE988A1-7CC6-FEEF-B361-C9CF9E51BD6B</attributeRef>
