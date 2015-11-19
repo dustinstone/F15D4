@@ -125,8 +125,8 @@ CREATE TABLE F15D4_RFE_Approval
     employee_type VARCHAR2 (255) ,
     rfe_id        INTEGER ,
     lab_id        INTEGER NOT NULL ,
-    approve       CHAR (1) ,
-    reject        CHAR (1)
+    approved       CHAR (1) ,
+    rejected        CHAR (1)
   ) ;
 ALTER TABLE F15D4_RFE_Approval ADD CONSTRAINT F15D4_RFE_Approval_PK PRIMARY KEY ( approval_id ) ;
 

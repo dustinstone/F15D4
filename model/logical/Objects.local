@@ -1,27 +1,43 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.logical.LogicalDesign>
    <object objectType="Entity" objectID="2D79E1AC-78DA-F788-2065-EBE202CBEA8F" name="F15.D4_StatusCode" seqName="seg_0"/>
-   <object objectType="Entity" objectID="BA5256CA-4DF0-A456-1282-E733FE45F0F6" name="F15D4_Auth" seqName="seg_0"/>
+   <object objectType="Entity" objectID="04BEA2C6-71C4-9899-FDFD-38316A6025C8" name="F15D4_Auth" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BA5256CA-4DF0-A456-1282-E733FE45F0F6" name="F15D4_Authv2" seqName="seg_0"/>
    <object objectType="Entity" objectID="E6A84B9C-915F-F919-249B-580ED2986701" name="F15D4_Comment" seqName="seg_0"/>
    <object objectType="Entity" objectID="F796A95B-71F9-5512-43CC-D0A88C8ECC63" name="F15D4_Document" seqName="seg_0"/>
    <object objectType="Entity" objectID="5F3BACBB-EB59-A962-1B02-67730D464F73" name="F15D4_Employee" seqName="seg_0"/>
    <object objectType="Entity" objectID="7A9FF8E2-D563-5259-3ABC-E1136A0BBD2B" name="F15D4_Lab" seqName="seg_0"/>
+   <object objectType="Entity" objectID="9792625D-FC82-E79E-E902-D829B200CB91" name="F15D4_Project" seqName="seg_0"/>
    <object objectType="Entity" objectID="509665B5-BA29-B079-9668-2BC55F1E2717" name="F15D4_RFE" seqName="seg_0"/>
    <object objectType="Entity" objectID="36BF1C51-C8F3-A981-87FC-0DA4DDD39D54" name="F15D4_RFE_Approval" seqName="seg_0"/>
    <object objectType="Entity" objectID="96CFA90C-A7A5-4DED-257C-5CBE5C5EB5F0" name="F15D4_RFE_Task" seqName="seg_0"/>
    <object objectType="Entity" objectID="71957E0A-5A63-D83A-E3D5-4FF7EE055F3F" name="F15D4_StatusHistory" seqName="seg_0"/>
    <object objectType="Relation" objectID="72CC23D0-547A-B0ED-1EA1-EF9164F668BF" name="Approvers_RFEs" seqName="seg_0"/>
-   <object objectType="Relation" objectID="B8F88F6A-A627-5C97-F039-BA42C378E3DB" name="Auth_Employees" seqName="seg_0"/>
+   <object objectType="Relation" objectID="233D7385-2BCC-9358-7B53-E1F5CD381765" name="Auth_Employees" seqName="seg_0"/>
+   <object objectType="Relation" objectID="B8F88F6A-A627-5C97-F039-BA42C378E3DB" name="Auth_Employeesv2" seqName="seg_0"/>
    <object objectType="Relation" objectID="4D966690-484B-92EF-0984-72573169A20A" name="Contacts_RFEs" seqName="seg_0"/>
    <object objectType="Relation" objectID="01AD4370-A02D-A055-3D19-1E9CDB0D5921" name="Employee_Comments" seqName="seg_0"/>
-   <object objectType="Relation" objectID="7B9E081E-8FAD-4BD4-0138-73C52DCE5618" name="Employee_StatusHistories" seqName="seg_0"/>
+   <object objectType="Relation" objectID="CE4AD969-17EE-95A0-D35D-80FC1F970DC2" name="Employee_RFEs" seqName="seg_0"/>
+   <object objectType="Relation" objectID="25A08B39-B389-EBA7-6B93-CF5F521309D1" name="Employee_StatusHistories" seqName="seg_0"/>
+   <object objectType="Relation" objectID="7B9E081E-8FAD-4BD4-0138-73C52DCE5618" name="Employee_StatusHistoriesv2" seqName="seg_0"/>
    <object objectType="Relation" objectID="3BCB878D-78CB-ED12-E0CD-A41FC0AB7AB1" name="Lab_Approvals" seqName="seg_0"/>
    <object objectType="Relation" objectID="39B3E343-2B75-FA21-814F-223C5345B1E9" name="Lab_LabEmployees" seqName="seg_0"/>
    <object objectType="Relation" objectID="50A1CA2F-4ADF-3B00-BF6A-1544A4F372C7" name="Lab_RFEs" seqName="seg_0"/>
    <object objectType="Relation" objectID="3D3C3978-6C3F-C2AE-5247-063475AEC09A" name="RFE_Approvals" seqName="seg_0"/>
    <object objectType="Relation" objectID="5897CE91-B7B3-912A-301D-105DC221184F" name="RFE_Comments" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5AB270E3-D89E-A7E1-4691-3DA65D6D7646" name="RFE_Contacts" seqName="seg_0"/>
    <object objectType="Relation" objectID="DA452289-DA54-1112-DF68-AAE3286E832B" name="RFE_Documents" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0DD4B5D0-BD42-B57B-CAC6-8A17D3E18FF8" name="RFE_Requestor" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D84E635E-28C2-6355-F808-A1118CBD91FB" name="RFE_Status" seqName="seg_0"/>
    <object objectType="Relation" objectID="081D7AE3-64C8-A7DC-5245-B364C2DC51A6" name="RFE_StatusHistory" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BAC4697C-5ADE-C6E5-4AE2-188194AD3850" name="RFE_StatusHistoryv1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="C7F78339-45F8-B0E5-B081-0F1900300BED" name="RFE_StatusHistoryv2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5D6BE534-BF3A-3F97-78AF-2E3040111845" name="RFE_Tasks" seqName="seg_0"/>
    <object objectType="Relation" objectID="9A71AFF0-7C50-EBF0-40DC-89F733A8D6B3" name="RFEs_Tasks" seqName="seg_0"/>
+   <object objectType="Relation" objectID="CF330E1C-E61A-FA21-47D9-F36D584A443B" name="RFEs_Tasksv1" seqName="seg_0"/>
    <object objectType="Relation" objectID="04D0DB93-BED5-DA74-8C37-A7A48C8504D4" name="Requestor_RFEs" seqName="seg_0"/>
+   <object objectType="Relation" objectID="5B32DDC0-1E44-4ACD-6BFB-F32C56F35612" name="StatusCode_RFEs" seqName="seg_0"/>
+   <object objectType="Relation" objectID="0A9257B6-A0B6-256C-2A71-7B57A4AD31B2" name="StatusCode_StatusHistories" seqName="seg_0"/>
+   <object objectType="Relation" objectID="240AE94E-92AB-9B5E-0B2D-8F0FBB829C93" name="StatusHistory_Employee" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2A440F1E-8EE5-6154-782C-F57EE200F359" name="Status_StatusHistory" seqName="seg_0"/>
 </oracle.dbtools.crest.model.design.logical.LogicalDesign>

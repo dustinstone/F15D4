@@ -3,6 +3,9 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-10-19 21:53:51 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="4F19D9BF-D04D-4847-392E-6A39B8775326" value="true"/>
+</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -16,6 +19,9 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-10-19 21:54:03 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="4F19D9BF-D04D-4847-392E-6A39B8775326" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -25,6 +31,9 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-11-12 23:30:18 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="4F19D9BF-D04D-4847-392E-6A39B8775326" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,6 +44,9 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-11-12 23:35:09 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="4F19D9BF-D04D-4847-392E-6A39B8775326" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,6 +58,9 @@
 <createdTime>2015-11-18 23:35:31 UTC</createdTime>
 <generatorID>081D7AE3-64C8-A7DC-5245-B364C2DC51A6</generatorID>
 <ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="4F19D9BF-D04D-4847-392E-6A39B8775326" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>71DAED66-DA59-672C-3B75-2BA4EC6F57BF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -58,6 +73,9 @@
 <createdTime>2015-11-18 23:35:55 UTC</createdTime>
 <generatorID>7B9E081E-8FAD-4BD4-0138-73C52DCE5618</generatorID>
 <ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="4F19D9BF-D04D-4847-392E-6A39B8775326" value="true"/>
+</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>5B2FEDCE-8860-BB15-5DAE-BC0FF0B855CC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -71,6 +89,9 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-10-19 21:54:09 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="4F19D9BF-D04D-4847-392E-6A39B8775326" value="true"/>
+</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>5BE988A1-7CC6-FEEF-B361-C9CF9E51BD6B</attributeRef>

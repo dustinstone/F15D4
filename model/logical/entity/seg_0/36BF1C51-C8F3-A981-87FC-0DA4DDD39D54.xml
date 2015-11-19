@@ -55,7 +55,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="approve" id="C37DCA37-297D-116B-A9A5-B8923AEC6CC8">
+<Attribute name="approved" id="C37DCA37-297D-116B-A9A5-B8923AEC6CC8">
 <createdBy>sean</createdBy>
 <createdTime>2015-11-18 23:36:22 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
@@ -66,7 +66,7 @@
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="reject" id="C27F6835-8DE2-55FE-F3C2-E04131C4C180">
+<Attribute name="rejected" id="C27F6835-8DE2-55FE-F3C2-E04131C4C180">
 <createdBy>sean</createdBy>
 <createdTime>2015-11-18 23:38:53 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
