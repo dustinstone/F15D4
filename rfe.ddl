@@ -60,7 +60,7 @@ CREATE TABLE F15D4_Comment
     rfe_id         INTEGER ,
     employee_id    INTEGER ,
     effective_date DATE ,
-    "comment"      VARCHAR2 (4000)
+    comment_body      VARCHAR2 (4000)
   ) ;
 ALTER TABLE F15D4_Comment ADD CONSTRAINT F15D4_Comment_PK PRIMARY KEY ( comment_id ) ;
 
