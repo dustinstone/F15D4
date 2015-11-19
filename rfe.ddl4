@@ -230,7 +230,7 @@ SELECT
     status,
     status_effective_date,
     type
-FROM F15D4_Employee where type = 'Executive_Director' ;
+FROM F15D4_Employee where type = 'Executive Director' ;
 
 create or replace TRIGGER F15D4_Exec_Director_Trigger
     INSTEAD OF insert ON F15D4_Executive_Director_View

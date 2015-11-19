@@ -41,10 +41,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="rfe_id1" id="28142CFB-5CFA-B370-EA0A-FA34C0EAAC3B">
+<Attribute name="rfe_id" id="57A0C097-A4EF-4524-CB4C-8D5168682B1D">
 <createdBy>sean</createdBy>
-<createdTime>2015-11-13 22:04:36 UTC</createdTime>
-<generatorID>BAC4697C-5ADE-C6E5-4AE2-188194AD3850</generatorID>
+<createdTime>2015-11-18 23:35:31 UTC</createdTime>
+<generatorID>081D7AE3-64C8-A7DC-5245-B364C2DC51A6</generatorID>
 <ownerDesignName>model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>71DAED66-DA59-672C-3B75-2BA4EC6F57BF</referedAttribute>
@@ -53,10 +53,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="employee_id" id="23E2A99E-51DE-4ED3-36EB-453CF9212EDA">
+<Attribute name="employee_id" id="C2DC4565-FA42-049A-8D75-37AB527BC32A">
 <createdBy>sean</createdBy>
-<createdTime>2015-11-13 22:14:47 UTC</createdTime>
-<generatorID>25A08B39-B389-EBA7-6B93-CF5F521309D1</generatorID>
+<createdTime>2015-11-18 23:35:55 UTC</createdTime>
+<generatorID>7B9E081E-8FAD-4BD4-0138-73C52DCE5618</generatorID>
 <ownerDesignName>model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>5B2FEDCE-8860-BB15-5DAE-BC0FF0B855CC</referedAttribute>

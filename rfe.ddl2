@@ -1,3 +1,37 @@
+DROP SEQUENCE Approvers_RFEs_seq ; 
+create sequence Approvers_RFEs_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER Approvers_RFEs_PK_trig 
+; 
+
+create or replace trigger Approvers_RFEs_PK_trig 
+before insert on Approvers_RFEs
+for each row 
+begin 
+select Approvers_RFEs_seq.nextval into :new.approver_rfe_id from dual; 
+end; 
+/
+
+DROP SEQUENCE Contacts_RFEs_seq ; 
+create sequence Contacts_RFEs_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER Contacts_RFEs_PK_trig 
+; 
+
+create or replace trigger Contacts_RFEs_PK_trig 
+before insert on Contacts_RFEs
+for each row 
+begin 
+select Contacts_RFEs_seq.nextval into :new.contact_id from dual; 
+end; 
+/
+
 DROP SEQUENCE F15D4_Auth_seq ; 
 create sequence F15D4_Auth_seq 
 start with 100 
@@ -117,23 +151,6 @@ select F15D4_RFE_Approval_seq.nextval into :new.approval_id from dual;
 end; 
 /
 
-DROP SEQUENCE F15D4_RFE_Contacts_seq ; 
-create sequence F15D4_RFE_Contacts_seq 
-start with 100 
-increment by 1 
-nomaxvalue 
-;
-DROP TRIGGER F15D4_RFE_Contacts_PK_trig 
-; 
-
-create or replace trigger F15D4_RFE_Contacts_PK_trig 
-before insert on F15D4_RFE_Contacts
-for each row 
-begin 
-select F15D4_RFE_Contacts_seq.nextval into :new.rfe_employee_id from dual; 
-end; 
-/
-
 DROP SEQUENCE F15D4_RFE_Task_seq ; 
 create sequence F15D4_RFE_Task_seq 
 start with 100 
@@ -151,23 +168,6 @@ select F15D4_RFE_Task_seq.nextval into :new.task_id from dual;
 end; 
 /
 
-DROP SEQUENCE F15D4_RFEs_Tasks_seq ; 
-create sequence F15D4_RFEs_Tasks_seq 
-start with 100 
-increment by 1 
-nomaxvalue 
-;
-DROP TRIGGER F15D4_RFEs_Tasks_PK_trig 
-; 
-
-create or replace trigger F15D4_RFEs_Tasks_PK_trig 
-before insert on F15D4_RFEs_Tasks
-for each row 
-begin 
-select F15D4_RFEs_Tasks_seq.nextval into :new.rfe_task_id from dual; 
-end; 
-/
-
 DROP SEQUENCE F15D4_StatusHistory_seq ; 
 create sequence F15D4_StatusHistory_seq 
 start with 100 
@@ -182,6 +182,23 @@ before insert on F15D4_StatusHistory
 for each row 
 begin 
 select F15D4_StatusHistory_seq.nextval into :new.status_history_id from dual; 
+end; 
+/
+
+DROP SEQUENCE RFEs_Tasks_seq ; 
+create sequence RFEs_Tasks_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER RFEs_Tasks_PK_trig 
+; 
+
+create or replace trigger RFEs_Tasks_PK_trig 
+before insert on RFEs_Tasks
+for each row 
+begin 
+select RFEs_Tasks_seq.nextval into :new.rfe_task_id from dual; 
 end; 
 /
 
@@ -208,14 +225,16 @@ CREATE INDEX rfe_id_FK_9 ON F15D4_Document(rfe_id) ;
 DROP INDEX rfe_id_FK_10 ;
 CREATE INDEX rfe_id_FK_10 ON F15D4_RFE_Approval(rfe_id) ;
 DROP INDEX status_history_id_FK_11 ;
-CREATE INDEX status_history_id_FK_11 ON F15D4_Employee(status_history_id) ;
-DROP INDEX status_history_id_FK_12 ;
-CREATE INDEX status_history_id_FK_12 ON F15D4_RFE(status_history_id) ;
+CREATE INDEX status_history_id_FK_11 ON F15D4_RFE(status_history_id) ;
+DROP INDEX employee_id_FK_12 ;
+CREATE INDEX employee_id_FK_12 ON Approvers_RFEs(employee_id) ;
 DROP INDEX rfe_id_FK_13 ;
-CREATE INDEX rfe_id_FK_13 ON F15D4_RFE_Contacts(rfe_id) ;
-DROP INDEX rfe_id_FK_14 ;
-CREATE INDEX rfe_id_FK_14 ON F15D4_RFEs_Tasks(rfe_id) ;
-DROP INDEX task_id_FK_15 ;
-CREATE INDEX task_id_FK_15 ON F15D4_RFEs_Tasks(task_id) ;
+CREATE INDEX rfe_id_FK_13 ON RFEs_Tasks(rfe_id) ;
+DROP INDEX task_id_FK_14 ;
+CREATE INDEX task_id_FK_14 ON RFEs_Tasks(task_id) ;
+DROP INDEX rfe_id_FK_15 ;
+CREATE INDEX rfe_id_FK_15 ON Approvers_RFEs(rfe_id) ;
 DROP INDEX employee_id_FK_16 ;
-CREATE INDEX employee_id_FK_16 ON F15D4_RFE_Contacts(employee_id) ;
+CREATE INDEX employee_id_FK_16 ON Contacts_RFEs(employee_id) ;
+DROP INDEX rfe_id_FK_17 ;
+CREATE INDEX rfe_id_FK_17 ON Contacts_RFEs(rfe_id) ;

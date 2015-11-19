@@ -120,25 +120,12 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="auth_id" id="CC83454D-5B51-577F-87FC-4091D01B85BB">
+<Attribute name="auth_id" id="88AADFF4-5637-9781-EF6E-2A945DA142AC">
 <createdBy>sean</createdBy>
-<createdTime>2015-11-12 23:07:59 UTC</createdTime>
-<generatorID>233D7385-2BCC-9358-7B53-E1F5CD381765</generatorID>
+<createdTime>2015-11-18 23:49:06 UTC</createdTime>
+<generatorID>B8F88F6A-A627-5C97-F039-BA42C378E3DB</generatorID>
 <ownerDesignName>model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>87C738AD-1FEF-0082-17CB-355FBE69E634</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="rfe_id" id="33F568D3-7DC1-EF40-8C2A-0855E1648EED">
-<createdBy>sean</createdBy>
-<createdTime>2015-11-13 22:04:36 UTC</createdTime>
-<generatorID>0DD4B5D0-BD42-B57B-CAC6-8A17D3E18FF8</generatorID>
-<ownerDesignName>model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>71DAED66-DA59-672C-3B75-2BA4EC6F57BF</referedAttribute>
+<referedAttribute>D7C80038-EDD4-5579-B114-6C2861DFEBBF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

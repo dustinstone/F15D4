@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2D79E1AC-78DA-F788-2065-EBE202CBEA8F" name="F15.D4_StatusCode">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BA5256CA-4DF0-A456-1282-E733FE45F0F6" name="F15D4_Auth">
 <createdBy>sean</createdBy>
-<createdTime>2015-10-19 21:29:22 UTC</createdTime>
+<createdTime>2015-11-18 23:47:46 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,18 +12,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="status_id" id="E074B289-56C7-0D84-5CD3-948A20257CB9">
+<Attribute name="auth_id" id="D7C80038-EDD4-5579-B114-6C2861DFEBBF">
 <createdBy>sean</createdBy>
-<createdTime>2015-10-19 21:29:26 UTC</createdTime>
+<createdTime>2015-11-18 23:48:01 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="status_code" id="D0805BB9-710E-30E9-0503-1BCD651C64D8">
+<Attribute name="right" id="B8F41DF5-F5C1-D270-6644-195EC29A96A9">
 <createdBy>sean</createdBy>
-<createdTime>2015-10-26 21:25:06 UTC</createdTime>
+<createdTime>2015-11-18 23:48:08 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -32,25 +32,15 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="effective_date" id="1A46324F-B91E-000C-BE05-1FDD6BA2E4A0">
-<createdBy>sean</createdBy>
-<createdTime>2015-10-26 22:20:24 UTC</createdTime>
-<ownerDesignName>model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="D9DD0774-0A2C-9C4D-1E5E-B08CB7152373" name="Status PK">
+<identifier id="D0689E06-F1ED-E6D5-9705-1F852F6EE32A" name="F15D4_Auth PK">
 <createdBy>sean</createdBy>
-<createdTime>2015-10-19 21:29:34 UTC</createdTime>
+<createdTime>2015-11-18 23:48:07 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>E074B289-56C7-0D84-5CD3-948A20257CB9</attributeRef>
+<attributeRef>D7C80038-EDD4-5579-B114-6C2861DFEBBF</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

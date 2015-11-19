@@ -65,18 +65,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="employee_id" id="7217CEBD-5F69-A97D-1D9E-9351E0A2FB2B">
-<createdBy>sean</createdBy>
-<createdTime>2015-11-12 23:11:42 UTC</createdTime>
-<generatorID>CE4AD969-17EE-95A0-D35D-80FC1F970DC2</generatorID>
-<ownerDesignName>model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>5B2FEDCE-8860-BB15-5DAE-BC0FF0B855CC</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="status_code" id="1FDC9FB7-915A-A331-495F-9DCA0CDDEF19">
 <createdBy>sean</createdBy>
 <createdTime>2015-11-12 23:34:50 UTC</createdTime>
@@ -87,12 +75,23 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="employee_id1" id="1DACAA2F-F2AF-355E-ED51-FA36A67F5D2D">
+<Attribute name="status_history_id" id="66F8E305-2A3F-EFE8-B806-8F32A11FA36B">
 <createdBy>sean</createdBy>
-<createdTime>2015-11-13 22:04:36 UTC</createdTime>
-<generatorID>0DD4B5D0-BD42-B57B-CAC6-8A17D3E18FF8</generatorID>
+<createdTime>2015-11-18 23:35:39 UTC</createdTime>
+<generatorID>081D7AE3-64C8-A7DC-5245-B364C2DC51A6</generatorID>
 <ownerDesignName>model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
+<referedAttribute>5BE988A1-7CC6-FEEF-B361-C9CF9E51BD6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="46817899-07BF-AC50-826A-959C2BC864EE">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-18 23:49:55 UTC</createdTime>
+<generatorID>04D0DB93-BED5-DA74-8C37-A7A48C8504D4</generatorID>
+<ownerDesignName>model</ownerDesignName>
 <referedAttribute>5B2FEDCE-8860-BB15-5DAE-BC0FF0B855CC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
