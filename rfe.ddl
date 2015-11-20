@@ -111,7 +111,7 @@ CREATE TABLE F15D4_RFE
     status_history_id    INTEGER ,
     employee_id          INTEGER NOT NULL
   ) ;
-CREATE UNIQUE INDEX F15D4_RFE__IDX ON F15D4_RFE
+CREATE INDEX F15D4_RFE__IDX ON F15D4_RFE
   (
     status_history_id ASC
   )
@@ -149,7 +149,7 @@ CREATE TABLE F15D4_StatusHistory
     rfe_id            INTEGER ,
     employee_id       INTEGER
   ) ;
-CREATE UNIQUE INDEX F15D4_StatusHistory__IDX ON F15D4_StatusHistory
+CREATE INDEX F15D4_StatusHistory__IDX ON F15D4_StatusHistory
   (
     rfe_id ASC
   )
