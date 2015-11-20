@@ -165,6 +165,11 @@ CREATE TABLE RFEs_Tasks
   ) ;
 ALTER TABLE RFEs_Tasks ADD CONSTRAINT RFEs_Tasks_PK PRIMARY KEY ( rfe_task_id ) ;
 
+CREATE TABLE F15D4_Status (
+  status_id         NUMBER         PRIMARY KEY,
+  description       VARCHAR2(255)  NOT NULL,
+  status_code         INTEGER   NOT NULL
+);
 
 ALTER TABLE F15D4_Employee ADD CONSTRAINT F15D4_Auth_FK FOREIGN KEY ( auth_id ) REFERENCES F15D4_Auth ( auth_id ) ;
 
