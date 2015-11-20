@@ -1,11 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="36BF1C51-C8F3-A981-87FC-0DA4DDD39D54" name="F15.D4_RFE_Approval">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="36BF1C51-C8F3-A981-87FC-0DA4DDD39D54" name="F15D4_RFE_Approval">
 <createdBy>sean</createdBy>
 <createdTime>2015-10-26 21:29:27 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-10-26 21:29:49 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -31,9 +25,6 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-10-26 21:30:12 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -46,9 +37,6 @@
 <createdTime>2015-10-26 21:36:17 UTC</createdTime>
 <generatorID>3D3C3978-6C3F-C2AE-5247-063475AEC09A</generatorID>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>71DAED66-DA59-672C-3B75-2BA4EC6F57BF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -61,14 +49,33 @@
 <createdTime>2015-10-26 21:38:35 UTC</createdTime>
 <generatorID>3BCB878D-78CB-ED12-E0CD-A41FC0AB7AB1</generatorID>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <referedAttribute>35253776-C5DE-C2BF-5F1A-C1C3743B6281</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="approved" id="C37DCA37-297D-116B-A9A5-B8923AEC6CC8">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-18 23:36:22 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rejected" id="C27F6835-8DE2-55FE-F3C2-E04131C4C180">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-18 23:38:53 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -76,9 +83,6 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-10-26 21:29:57 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>B7AF2AAE-0E36-543F-A8DF-8A1B1B2555D2</attributeRef>

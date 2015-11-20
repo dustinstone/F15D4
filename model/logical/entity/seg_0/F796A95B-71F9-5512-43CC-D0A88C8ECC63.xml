@@ -1,11 +1,8 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F796A95B-71F9-5512-43CC-D0A88C8ECC63" name="F15.D4_Document">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F796A95B-71F9-5512-43CC-D0A88C8ECC63" name="F15D4_Document">
 <createdBy>sean</createdBy>
 <createdTime>2015-10-19 22:01:35 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>sean</createdBy>
 <createdTime>2015-10-19 22:01:42 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -32,9 +26,6 @@
 <createdTime>2015-10-19 22:01:59 UTC</createdTime>
 <generatorID>DA452289-DA54-1112-DF68-AAE3286E832B</generatorID>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>71DAED66-DA59-672C-3B75-2BA4EC6F57BF</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -42,15 +33,55 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="mimetype" id="AB339294-EC1E-423B-768B-EA5FA9E20876">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-18 23:28:19 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="content" id="405175D5-EA59-E2FE-2794-356FF6C048B2">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-18 23:28:29 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="charset" id="3D3251D2-C605-A3F3-3FB4-94910CC2F585">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-18 23:28:39 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="filename" id="49998FEF-619E-4E5F-379C-063D4A34AC4A">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-18 23:28:46 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="A06D3FF8-0365-4FA3-7CBD-52771C6A4B2F" name="Document PK">
 <createdBy>sean</createdBy>
 <createdTime>2015-10-19 22:01:48 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>
-<engineerTo>
-<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>345BCC59-D1C2-A818-3DC0-8B70CA3E6201</attributeRef>

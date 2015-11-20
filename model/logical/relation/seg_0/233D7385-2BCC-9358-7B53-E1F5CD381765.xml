@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Auth_Employees" directorySegmentName="seg_0" id="233D7385-2BCC-9358-7B53-E1F5CD381765">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:07:59 UTC</createdTime>
+<ownerDesignName>model</ownerDesignName>
+<engineerTo>
+<item key="2D916188-5456-66A7-FFBA-497089BF26C0" value="true"/>
+</engineerTo>
+<sourcePk>14B5B722-039B-B5A0-B048-B933A26CC3A9</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>04BEA2C6-71C4-9899-FDFD-38316A6025C8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5F3BACBB-EB59-A962-1B02-67730D464F73</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

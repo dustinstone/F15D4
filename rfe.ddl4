@@ -1,11 +1,11 @@
-drop view F15_D4_Employee_View ;
-drop view F15_D4_Lab_Employee_View ;
-drop view F15_D4_Lab_Director_View ;
-drop view F15_D4_Sys_Admin_View ;
-drop view F15_D4_Chairperson_View ;
-drop view F15_D4_Executive_Director_View ;
+drop view F15D4_Employee_View ;
+drop view F15D4_Lab_Employee_View ;
+drop view F15D4_Lab_Director_View ;
+drop view F15D4_Sys_Admin_View ;
+drop view F15D4_Chairperson_View ;
+drop view F15D4_Executive_Director_View ;
 
-create view F15_D4_Employee_View as
+create view F15D4_Employee_View as
 SELECT
     employee_id,
     active,
@@ -16,13 +16,13 @@ SELECT
     status,
     status_effective_date,
     type
-FROM F15_D4_Employee where type = 'Employee' ;
+FROM F15D4_Employee where type = 'Employee' ;
 
-create or replace TRIGGER F15_D4_Employee_Trigger
-    INSTEAD OF insert ON F15_D4_Employee_View
+create or replace TRIGGER F15D4_Employee_Trigger
+    INSTEAD OF insert ON F15D4_Employee_View
     FOR EACH ROW
 BEGIN
-    insert into F15_D4_Employee(
+    insert into F15D4_Employee(
                 employee_id,
                 active,
                 name,
@@ -46,7 +46,7 @@ BEGIN
 END ;
 /
 
-create view F15_D4_Lab_Employee_View as
+create view F15D4_Lab_Employee_View as
 SELECT
     employee_id,
     active,
@@ -58,13 +58,13 @@ SELECT
     status_effective_date,
     lab_id,
     type
-FROM F15_D4_Employee where type = 'Lab Employee' ;
+FROM F15D4_Employee where type = 'Lab Employee' ;
 
-create or replace TRIGGER F15_D4_Lab_Employee_Trigger
-    INSTEAD OF insert ON F15_D4_Lab_Employee_View
+create or replace TRIGGER F15D4_Lab_Employee_Trigger
+    INSTEAD OF insert ON F15D4_Lab_Employee_View
     FOR EACH ROW
 BEGIN
-    insert into F15_D4_Employee(
+    insert into F15D4_Employee(
                 employee_id,
                 active,
                 name,
@@ -90,7 +90,7 @@ BEGIN
 END ;
 /
 
-create view F15_D4_Lab_Director_View as
+create view F15D4_Lab_Director_View as
 SELECT
     employee_id,
     active,
@@ -102,13 +102,13 @@ SELECT
     status_effective_date,
     lab_id,
     type
-FROM F15_D4_Employee where type = 'Lab Director' ;
+FROM F15D4_Employee where type = 'Lab Director' ;
 
-create or replace TRIGGER F15_D4_Lab_Director_Trigger
-    INSTEAD OF insert ON F15_D4_Lab_Director_View
+create or replace TRIGGER F15D4_Lab_Director_Trigger
+    INSTEAD OF insert ON F15D4_Lab_Director_View
     FOR EACH ROW
 BEGIN
-    insert into F15_D4_Employee(
+    insert into F15D4_Employee(
                 employee_id,
                 active,
                 name,
@@ -134,7 +134,7 @@ BEGIN
 END ;
 /
 
-create view F15_D4_Sys_Admin_View as
+create view F15D4_Sys_Admin_View as
 SELECT
     employee_id,
     active,
@@ -146,13 +146,13 @@ SELECT
     status_effective_date,
     lab_id,
     type
-FROM F15_D4_Employee where type = 'Sys Admin' ;
+FROM F15D4_Employee where type = 'Sys Admin' ;
 
-create or replace TRIGGER F15_D4_Sys_Admin_Trigger
-    INSTEAD OF insert ON F15_D4_Sys_Admin_View
+create or replace TRIGGER F15D4_Sys_Admin_Trigger
+    INSTEAD OF insert ON F15D4_Sys_Admin_View
     FOR EACH ROW
 BEGIN
-    insert into F15_D4_Employee(
+    insert into F15D4_Employee(
                 employee_id,
                 active,
                 name,
@@ -178,7 +178,7 @@ BEGIN
 END ;
 /
 
-create view F15_D4_Chairperson_View as
+create view F15D4_Chairperson_View as
 SELECT
     employee_id,
     active,
@@ -189,13 +189,13 @@ SELECT
     status,
     status_effective_date,
     type
-FROM F15_D4_Employee where type = 'Chairperson' ;
+FROM F15D4_Employee where type = 'Chairperson' ;
 
-create or replace TRIGGER F15_D4_Chairperson_Trigger
-    INSTEAD OF insert ON F15_D4_Chairperson_View
+create or replace TRIGGER F15D4_Chairperson_Trigger
+    INSTEAD OF insert ON F15D4_Chairperson_View
     FOR EACH ROW
 BEGIN
-    insert into F15_D4_Employee(
+    insert into F15D4_Employee(
                 employee_id,
                 active,
                 name,
@@ -219,7 +219,7 @@ BEGIN
 END ;
 /
 
-create view F15_D4_Executive_Director_View as
+create view F15D4_Executive_Director_View as
 SELECT
     employee_id,
     active,
@@ -230,13 +230,13 @@ SELECT
     status,
     status_effective_date,
     type
-FROM F15_D4_Employee where type = 'Executive_Director' ;
+FROM F15D4_Employee where type = 'Executive Director' ;
 
-create or replace TRIGGER F15_D4_Exec_Director_Trigger
-    INSTEAD OF insert ON F15_D4_Executive_Director_View
+create or replace TRIGGER F15D4_Exec_Director_Trigger
+    INSTEAD OF insert ON F15D4_Executive_Director_View
     FOR EACH ROW
 BEGIN
-    insert into F15_D4_Employee(
+    insert into F15D4_Employee(
                 employee_id,
                 active,
                 name,

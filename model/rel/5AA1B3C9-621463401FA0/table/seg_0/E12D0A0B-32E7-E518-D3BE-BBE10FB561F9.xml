@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E12D0A0B-32E7-E518-D3BE-BBE10FB561F9" name="F15D4_RFE_Task">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:47:48 UTC</createdTime>
+<generatorID>96CFA90C-A7A5-4DED-257C-5CBE5C5EB5F0</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="task_id" id="C873ED4F-023A-8533-1AA2-7074A93B9352">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:47:48 UTC</createdTime>
+<generatorID>BA9A984D-80A7-27F6-382B-C28B776958F5</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="effective_date" id="F435B1AF-8DE7-1915-EC47-0678B2A14332">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:47:48 UTC</createdTime>
+<generatorID>13448B09-0AEE-FC49-AFD2-9AFE7964834F</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="abbv" id="A2D20693-F2FB-4DC4-5505-4301502F8078">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:47:48 UTC</createdTime>
+<generatorID>DC440369-9A70-0603-88F1-0F14B9BE969B</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="3B5AF7A1-6954-A8E8-6645-4118C5564CC1">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:47:48 UTC</createdTime>
+<generatorID>8CD64B21-5DB5-AEF5-C8AF-A561C084A115</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F5C296F5-9E5F-CCFF-5FB6-FEC1ACEFF29F" name="F15D4_RFE_Task_PK">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:47:48 UTC</createdTime>
+<generatorID>9901164B-B8F2-11CA-53E4-23ACFCEBE65E</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C873ED4F-023A-8533-1AA2-7074A93B9352"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

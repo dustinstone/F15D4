@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="5897CE91-B7B3-912A-301D-105DC221184F">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RFE_Comments" directorySegmentName="seg_0" id="5897CE91-B7B3-912A-301D-105DC221184F">
 <createdBy>sean</createdBy>
 <createdTime>2015-10-19 21:32:54 UTC</createdTime>
 <ownerDesignName>model</ownerDesignName>

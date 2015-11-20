@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9170D827-94EC-C481-AD97-618A859EDA2F" name="F15D4_RFE_Approval">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-19 00:14:50 UTC</createdTime>
+<generatorID>36BF1C51-C8F3-A981-87FC-0DA4DDD39D54</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="approval_id" id="7BF65B2B-59F8-67CD-A6A4-4215CD97793A">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-19 00:14:50 UTC</createdTime>
+<generatorID>B7AF2AAE-0E36-543F-A8DF-8A1B1B2555D2</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_type" id="85E44CB1-02B0-9F43-747A-8F75C442A3F8">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-19 00:14:50 UTC</createdTime>
+<generatorID>BEF8BFFC-5EC1-3855-3E30-239E71713281</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rfe_id" id="695D2C9A-27F8-293B-F69F-47DD2644AC0A">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-19 00:14:50 UTC</createdTime>
+<generatorID>A6788BA3-D9AE-E446-3900-98E29BF3AA68</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1433E10E-DA05-7A2A-FC93-12DBA1B80884" referredColumn="DF456269-1E54-8A38-845F-0611737A44E2"/>
+</associations>
+</Column>
+<Column name="lab_id" id="D52E080A-260D-06AB-BD1A-4BF571DCC28C">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-19 00:14:50 UTC</createdTime>
+<generatorID>10CBE022-8B65-B28F-7EF3-7225DCB6FF8D</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="781E5C3B-56CA-03F6-E2DA-B9A88B01873F" referredColumn="DA0A1E6B-0E14-C33E-EAEB-B5E3FD5EF757"/>
+</associations>
+</Column>
+<Column name="approve" id="D13F2338-3E63-621E-6D3F-A70A24BE5B41">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-19 00:14:50 UTC</createdTime>
+<generatorID>C37DCA37-297D-116B-A9A5-B8923AEC6CC8</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reject" id="02F721CE-E61C-AD85-510A-4453C2176B33">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-19 00:14:50 UTC</createdTime>
+<generatorID>C27F6835-8DE2-55FE-F3C2-E04131C4C180</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A3C1CB87-CFAD-39B6-69F6-3C29C2CCF8F8" name="F15D4_RFE_Approval_PK">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-19 00:14:50 UTC</createdTime>
+<generatorID>C5C5EEEE-6740-91B7-2485-6F3224EBD9EB</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BF65B2B-59F8-67CD-A6A4-4215CD97793A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="742AF366-9288-89F6-7B60-4D23022AE8E1" name="F15D4_Lab_FKv3">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-19 00:14:50 UTC</createdTime>
+<generatorID>3BCB878D-78CB-ED12-E0CD-A41FC0AB7AB1</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D52E080A-260D-06AB-BD1A-4BF571DCC28C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1B86FD5-D46D-B803-BA1C-9FCFCD31C96E" name="F15D4_RFE_FKv4">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-19 00:14:50 UTC</createdTime>
+<generatorID>3D3C3978-6C3F-C2AE-5247-063475AEC09A</generatorID>
+<ownerDesignName>model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="695D2C9A-27F8-293B-F69F-47DD2644AC0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

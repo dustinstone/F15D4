@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="64E780C9-98D9-7C38-3A1C-A8C6346D9179" containerWithKeyObject="C33DCBA6-8BC2-27A1-78FA-94194C574EB8" localFKIndex="1FB8369B-8C86-AEF9-7A75-16D9048962A1" name="F15D4_Employee_FKv3">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:47:48 UTC</createdTime>
+<generatorID>CE4AD969-17EE-95A0-D35D-80FC1F970DC2</generatorID>
+<notes>Keeps track of which RFEs an employee is a requestor for.</notes>
+<ownerDesignName>model</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FB4389C6-95D0-04A2-D901-63D819948AE5</referredTableID>
+<keyObject>9328F1DB-F6D1-5D53-DBA3-71A879CD75A4</keyObject>
+<referredKeyID>9328F1DB-F6D1-5D53-DBA3-71A879CD75A4</referredKeyID>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

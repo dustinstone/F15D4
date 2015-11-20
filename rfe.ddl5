@@ -1,0 +1,27 @@
+INSERT INTO F15D4_Lab (lab_id, name) VALUES (1, 'Computing');
+INSERT INTO F15D4_Lab (lab_id, name) VALUES (2, 'Chemistry');
+INSERT INTO F15D4_Lab (lab_id, name) VALUES (3, 'Biology');
+
+INSERT INTO F15D4_Auth (auth_id, right) VALUES (1, 'View');
+INSERT INTO F15D4_Auth (auth_id, right) VALUES (2, 'Edit');
+
+INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
+VALUES (1, 'Y', 'Mr. Lab Employee #1', 'bobjerry@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Lab Employee', 100, 100);
+
+INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
+VALUES (2, 'Y', 'Mrs. Sys Admin', 'johndoe@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Sys Admin', 100, 100);
+
+INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
+VALUES (3, 'Y', 'Ms. Lab Director', 'myrongaines@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Lab Director', 100, 100);
+
+INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
+VALUES (4, 'Y', 'Mrs. Chairperson', 'pattyofurniture@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Chairperson', 100, 100);
+
+INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
+VALUES (5, 'Y', 'Ms. Exec Director', 'waiyumadtho@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Executive Director', 100, 100);
+
+INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
+VALUES (6, 'Y', 'Mr. Lab Director #2', 'mandyharpoons@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Lab Director', 100, 100);
+
+INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
+VALUES (7, 'Y', 'Mr. Sys Admin #2', 'khum@me.bro', '5555555555', '5555555555', '', SYSDATE, 'Sys Admin', 100, 100);
