@@ -16,7 +16,7 @@ BEGIN
     VALUES (SYSDATE, 2, :NEW.RFE_ID, :NEW.EMPLOYEE_ID);
 END;
 
-CREATE OR REPLACE TRIGGER SYSADMIN_APPROVAL
+CREATE OR REPLACE TRIGGER APPROVE_RFES
 BEFORE
 update on F15D4_RFE_APPROVAL
 for each row
@@ -26,6 +26,27 @@ IF (:NEW.approved = 1 AND :NEW.employee_type = 'Sys Admin') THEN
     :NEW.APPROVED := 0;
     :NEW.REJECTED := 0;
     UPDATE F15D4_RFE SET status_code = 6 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
+
+IF (:NEW.approved = 1 AND :NEW.employee_type = 'Lab Director') THEN
+    :NEW.employee_type := 'Chairperson';
+    :NEW.APPROVED := 0;
+    :NEW.REJECTED := 0;
+    UPDATE F15D4_RFE SET status_code = 7 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
+
+IF (:NEW.approved = 1 AND :NEW.employee_type = 'Chairperson') THEN
+    :NEW.employee_type := 'Executive Director';
+    :NEW.APPROVED := 0;
+    :NEW.REJECTED := 0;
+    UPDATE F15D4_RFE SET status_code = 8 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
+
+IF (:NEW.approved = 1 AND :NEW.employee_type = 'Executive Director') THEN
+    :NEW.employee_type := 'Final';
+    :NEW.APPROVED := 0;
+    :NEW.REJECTED := 0;
+    UPDATE F15D4_RFE SET status_code = 9 WHERE rfe_id = :NEW.RFE_ID;
 END IF;
 end;
 
