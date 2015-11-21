@@ -25,7 +25,7 @@ Neo4j on conn "CREATE (:dish { DISHNO : 19, NAME : 'Pad Thai', TYPE : 'Casual', 
 Neo4j on conn "CREATE (:dish { DISHNO : 20, NAME : 'Chicken Tika Misala', TYPE : 'Casual', VENDOR: 'Tejis', VENDORID: 4, FOODID : 3})"
 Neo4j on conn "CREATE (:dish { DISHNO : 21, NAME : 'Garlic Naan', TYPE : 'Casual', VENDOR: 'Tejis', VENDORID: 4, FOODID : 3})"
 Neo4j on conn "CREATE (:dish { DISHNO : 22, NAME : 'Naan', TYPE : 'Casual', VENDOR: 'Tejis', VENDORID: 4, FOODID : 3})"
-Neo4j on conn "CREATE (:dish { DISHNO : 23, NAME : 'Chicken Vindaloo', TYPE : 'Casual', VENDOR: 'Tejis', VENDORID: 4 FOODID : 3'})"
+Neo4j on conn "CREATE (:dish { DISHNO : 23, NAME : 'Chicken Vindaloo', TYPE : 'Casual', VENDOR: 'Tejis', VENDORID: 4, FOODID : 3})"
 Neo4j on conn "CREATE (:dish { DISHNO : 24, NAME : 'Curry', TYPE : 'Casual', VENDOR: 'Tejis', VENDORID: 4, FOODID : 3})"
 
 Neo4j on conn "CREATE (:dish { DISHNO : 25, NAME : 'Quesadilla', TYPE : 'Fast Food', VENDOR: 'Qdoba', VENDORID: 5, FOODID : 1})"
