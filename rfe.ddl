@@ -111,7 +111,7 @@ CREATE TABLE F15D4_RFE
     status_history_id    INTEGER ,
     employee_id          INTEGER NOT NULL
   ) ;
-CREATE UNIQUE INDEX F15D4_RFE__IDX ON F15D4_RFE
+CREATE INDEX F15D4_RFE__IDX ON F15D4_RFE
   (
     status_history_id ASC
   )
@@ -149,7 +149,7 @@ CREATE TABLE F15D4_StatusHistory
     rfe_id            INTEGER ,
     employee_id       INTEGER
   ) ;
-CREATE UNIQUE INDEX F15D4_StatusHistory__IDX ON F15D4_StatusHistory
+CREATE INDEX F15D4_StatusHistory__IDX ON F15D4_StatusHistory
   (
     rfe_id ASC
   )
@@ -165,6 +165,11 @@ CREATE TABLE RFEs_Tasks
   ) ;
 ALTER TABLE RFEs_Tasks ADD CONSTRAINT RFEs_Tasks_PK PRIMARY KEY ( rfe_task_id ) ;
 
+CREATE TABLE F15D4_Status (
+  status_id         NUMBER         PRIMARY KEY,
+  description       VARCHAR2(255)  NOT NULL,
+  status_code         INTEGER   NOT NULL
+);
 
 ALTER TABLE F15D4_Employee ADD CONSTRAINT F15D4_Auth_FK FOREIGN KEY ( auth_id ) REFERENCES F15D4_Auth ( auth_id ) ;
 

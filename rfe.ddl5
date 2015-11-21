@@ -25,3 +25,30 @@ VALUES (6, 'Y', 'Mr. Lab Director #2', 'mandyharpoons@gmail.com', '5555555555', 
 
 INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
 VALUES (7, 'Y', 'Mr. Sys Admin #2', 'khum@me.bro', '5555555555', '5555555555', '', SYSDATE, 'Sys Admin', 100, 100);
+
+INSERT INTO F15D4_Status (status_id, description, status_code)
+VALUES (1, 'Entered', 1);
+
+INSERT INTO F15D4_Status (status_id, description, status_code)
+VALUES (2, 'Submitted', 2);
+
+INSERT INTO F15D4_Status (status_id, description, status_code)
+VALUES (3, 'Returned', 3);
+
+INSERT INTO F15D4_Status (status_id, description, status_code)
+VALUES (4, 'Recalled', 4);
+
+INSERT INTO F15D4_Status (status_id, description, status_code)
+VALUES (5, 'Rejected', 5);
+
+INSERT INTO F15D4_Status (status_id, description, status_code)
+VALUES (6, 'SA Approved', 6);
+
+INSERT INTO F15D4_Status (status_id, description, status_code)
+VALUES (7, 'LD Approved', 7);
+
+INSERT INTO F15D4_Status (status_id, description, status_code)
+VALUES (8, 'CH Approved', 8);
+
+INSERT INTO F15D4_Status (status_id, description, status_code)
+VALUES (9, 'Final Approval', 9);
