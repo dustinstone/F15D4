@@ -4,7 +4,7 @@ ON F15D4_RFE
 FOR EACH ROW
 BEGIN
  INSERT INTO F15D4_RFE_APPROVAL (EMPLOYEE_TYPE, RFE_ID, LAB_ID, APPROVED, REJECTED)
-    VALUES ('Lab Employee', :NEW.RFE_ID, :NEW.LAB_ID, 0, 0);
+    VALUES ((SELECT type FROM F15D4_Employee WHERE employee_id = v('CURRENT_EMPLOYEE')), :NEW.RFE_ID, :NEW.LAB_ID, 0, 0);
 END;
 
 CREATE OR REPLACE TRIGGER add_init_history
@@ -23,9 +23,9 @@ for each row
 begin
 -- 1 = Approve
 -- 2 = Submit
--- 0 = Reject
--- -1 = Return
-IF (:NEW.approved = 2 AND :NEW.employee_type = 'Lab Employee') THEN
+-- 3 = Return
+-- 4 = Reject
+IF (:NEW.approved = 2) THEN
     :NEW.employee_type := 'Sys Admin';
     :NEW.APPROVED := 0;
     :NEW.REJECTED := 0;
@@ -59,6 +59,19 @@ IF (:NEW.approved = 1 AND :NEW.employee_type = 'Executive Director') THEN
     :NEW.REJECTED := 0;
     UPDATE F15D4_RFE SET status_code = 9 WHERE rfe_id = :NEW.RFE_ID;
 END IF;
+
+IF (:NEW.approved = 3 AND :NEW.employee_type != 'Lab Employee') THEN
+    :NEW.employee_type := 'Lab Employee';
+    :NEW.APPROVED := 0;
+    :NEW.REJECTED := 0;
+    UPDATE F15D4_RFE SET status_code = 3 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
+
+IF (:NEW.approved = 4 AND :NEW.employee_type != 'Lab Employee') THEN
+    :NEW.employee_type := 'Rejected';
+    UPDATE F15D4_RFE SET status_code = 5 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
+
 end;
 
 CREATE OR REPLACE TRIGGER APPROVAL_UPDATE_HISTORY
