@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RFE_Approvals" directorySegmentName="seg_0" id="3D3C3978-6C3F-C2AE-5247-063475AEC09A">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-26 21:36:17 UTC</createdTime>
+<ownerDesignName>rfe</ownerDesignName>
+<sourcePk>BA9C3995-840B-5C53-8685-5D7A3AA9E5B2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>509665B5-BA29-B079-9668-2BC55F1E2717</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>36BF1C51-C8F3-A981-87FC-0DA4DDD39D54</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
