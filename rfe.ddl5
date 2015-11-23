@@ -1,54 +1,86 @@
-INSERT INTO F15D4_Lab (lab_id, name) VALUES (1, 'Computing');
-INSERT INTO F15D4_Lab (lab_id, name) VALUES (2, 'Chemistry');
-INSERT INTO F15D4_Lab (lab_id, name) VALUES (3, 'Biology');
+CREATE OR REPLACE TRIGGER add_init_approval
+AFTER INSERT
+ON F15D4_RFE
+FOR EACH ROW
+BEGIN
+    INSERT INTO F15D4_RFE_APPROVAL (EMPLOYEE_TYPE, RFE_ID, LAB_ID, APPROVED, REJECTED)
+    VALUES ((SELECT type FROM F15D4_Employee WHERE employee_id = v('CURRENT_EMPLOYEE')), :NEW.RFE_ID, :NEW.LAB_ID, 0, 0);
 
-INSERT INTO F15D4_Auth (auth_id, right) VALUES (1, 'View');
-INSERT INTO F15D4_Auth (auth_id, right) VALUES (2, 'Edit');
+    UPDATE F15D4_RFE SET status_code = 1 WHERE rfe_id = :NEW.RFE_ID;
+END;
 
-INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
-VALUES (1, 'Y', 'Mr. Lab Employee #1', 'bobjerry@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Lab Employee', 100, 100);
+CREATE OR REPLACE TRIGGER add_init_history
+AFTER INSERT
+ON F15D4_RFE
+FOR EACH ROW
+BEGIN
+    INSERT INTO F15D4_STATUSHISTORY (TIMESTAMP, STATUS_CODE, RFE_ID, EMPLOYEE_ID)
+    VALUES (SYSDATE, 1, :NEW.RFE_ID, :NEW.EMPLOYEE_ID);
+END;
 
-INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
-VALUES (2, 'Y', 'Mrs. Sys Admin', 'johndoe@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Sys Admin', 100, 100);
+CREATE OR REPLACE TRIGGER APPROVE_RFES
+BEFORE
+update on F15D4_RFE_APPROVAL
+for each row
+begin
+-- 1 = Approve
+-- 2 = Submit
+-- 3 = Return
+-- 4 = Reject
+IF (:NEW.approved = 2) THEN
+    :NEW.employee_type := 'Sys Admin';
+    :NEW.APPROVED := 0;
+    :NEW.REJECTED := 0;
+    UPDATE F15D4_RFE SET status_code = 2 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
 
-INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
-VALUES (3, 'Y', 'Ms. Lab Director', 'myrongaines@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Lab Director', 100, 100);
+IF (:NEW.approved = 1 AND :NEW.employee_type = 'Sys Admin') THEN
+    :NEW.employee_type := 'Lab Director';
+    :NEW.APPROVED := 0;
+    :NEW.REJECTED := 0;
+    UPDATE F15D4_RFE SET status_code = 6 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
 
-INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
-VALUES (4, 'Y', 'Mrs. Chairperson', 'pattyofurniture@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Chairperson', 100, 100);
+IF (:NEW.approved = 1 AND :NEW.employee_type = 'Lab Director') THEN
+    :NEW.employee_type := 'Chairperson';
+    :NEW.APPROVED := 0;
+    :NEW.REJECTED := 0;
+    UPDATE F15D4_RFE SET status_code = 7 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
 
-INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
-VALUES (5, 'Y', 'Ms. Exec Director', 'waiyumadtho@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Executive Director', 100, 100);
+IF (:NEW.approved = 1 AND :NEW.employee_type = 'Chairperson') THEN
+    :NEW.employee_type := 'Executive Director';
+    :NEW.APPROVED := 0;
+    :NEW.REJECTED := 0;
+    UPDATE F15D4_RFE SET status_code = 8 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
 
-INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
-VALUES (6, 'Y', 'Mr. Lab Director #2', 'mandyharpoons@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Lab Director', 100, 100);
+IF (:NEW.approved = 1 AND :NEW.employee_type = 'Executive Director') THEN
+    :NEW.employee_type := 'Final';
+    :NEW.APPROVED := 0;
+    :NEW.REJECTED := 0;
+    UPDATE F15D4_RFE SET status_code = 9 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
 
-INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
-VALUES (7, 'Y', 'Mr. Sys Admin #2', 'khum@me.bro', '5555555555', '5555555555', '', SYSDATE, 'Sys Admin', 100, 100);
+IF (:NEW.approved = 3 AND :NEW.employee_type != 'Lab Employee') THEN
+    :NEW.employee_type := 'Lab Employee';
+    :NEW.APPROVED := 0;
+    :NEW.REJECTED := 0;
+    UPDATE F15D4_RFE SET status_code = 3 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
 
-INSERT INTO F15D4_Status (status_id, description, status_code)
-VALUES (1, 'Entered', 1);
+IF (:NEW.approved = 4 AND :NEW.employee_type != 'Lab Employee') THEN
+    :NEW.employee_type := 'Rejected';
+    UPDATE F15D4_RFE SET status_code = 5 WHERE rfe_id = :NEW.RFE_ID;
+END IF;
 
-INSERT INTO F15D4_Status (status_id, description, status_code)
-VALUES (2, 'Submitted', 2);
+end;
 
-INSERT INTO F15D4_Status (status_id, description, status_code)
-VALUES (3, 'Returned', 3);
-
-INSERT INTO F15D4_Status (status_id, description, status_code)
-VALUES (4, 'Recalled', 4);
-
-INSERT INTO F15D4_Status (status_id, description, status_code)
-VALUES (5, 'Rejected', 5);
-
-INSERT INTO F15D4_Status (status_id, description, status_code)
-VALUES (6, 'SA Approved', 6);
-
-INSERT INTO F15D4_Status (status_id, description, status_code)
-VALUES (7, 'LD Approved', 7);
-
-INSERT INTO F15D4_Status (status_id, description, status_code)
-VALUES (8, 'CH Approved', 8);
-
-INSERT INTO F15D4_Status (status_id, description, status_code)
-VALUES (9, 'Final Approval', 9);
+CREATE OR REPLACE TRIGGER APPROVAL_UPDATE_HISTORY
+AFTER
+UPDATE ON F15D4_RFE_APPROVAL
+FOR EACH ROW
+BEGIN
+    INSERT INTO F15D4_STATUSHISTORY (TIMESTAMP, STATUS_CODE, RFE_ID, EMPLOYEE_ID)
+    VALUES (SYSDATE, (SELECT status_code FROM F15D4_RFE WHERE rfe_id = :NEW.RFE_ID), :NEW.RFE_ID, v('CURRENT_EMPLOYEE'));
+END;
