@@ -1,9 +1,9 @@
-drop view F15D4_Employee_View ;
-drop view F15D4_Lab_Employee_View ;
-drop view F15D4_Lab_Director_View ;
-drop view F15D4_Sys_Admin_View ;
-drop view F15D4_Chairperson_View ;
-drop view F15D4_Executive_Director_View ;
+DROP VIEW F15D4_Employee_View ;
+DROP VIEW F15D4_Lab_Employee_View ;
+DROP VIEW F15D4_Lab_Director_View ;
+DROP VIEW F15D4_Sys_Admin_View ;
+DROP VIEW F15D4_Chairperson_View ;
+DROP VIEW F15D4_Executive_Director_View ;
 
 create view F15D4_Employee_View as
 SELECT
