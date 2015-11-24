@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="71957E0A-5A63-D83A-E3D5-4FF7EE055F3F" name="F15D4_StatusHistory">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-19 21:53:51 UTC</createdTime>
+<ownerDesignName>rfe</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="status_history_id" id="5BE988A1-7CC6-FEEF-B361-C9CF9E51BD6B">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-19 21:54:03 UTC</createdTime>
+<ownerDesignName>rfe</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="timestamp" id="F63AEC82-DB89-14EF-7428-17E4719EB5FA">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:30:18 UTC</createdTime>
+<ownerDesignName>rfe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_code" id="B3754BBA-98A9-D644-3BA6-4325D66F0E61">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-12 23:35:09 UTC</createdTime>
+<ownerDesignName>rfe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="57A0C097-A4EF-4524-CB4C-8D5168682B1D">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-18 23:35:31 UTC</createdTime>
+<generatorID>081D7AE3-64C8-A7DC-5245-B364C2DC51A6</generatorID>
+<ownerDesignName>rfe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>71DAED66-DA59-672C-3B75-2BA4EC6F57BF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="employee_id" id="8F6FE99B-5200-06A8-9083-58C369968096">
+<createdBy>sean</createdBy>
+<createdTime>2015-11-23 01:01:03 UTC</createdTime>
+<generatorID>25A08B39-B389-EBA7-6B93-CF5F521309D1</generatorID>
+<ownerDesignName>rfe</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5B2FEDCE-8860-BB15-5DAE-BC0FF0B855CC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DF3DCEDD-295C-252E-61F5-22DB144EDDE6" name="StatusHistory PK">
+<createdBy>sean</createdBy>
+<createdTime>2015-10-19 21:54:09 UTC</createdTime>
+<ownerDesignName>rfe</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5BE988A1-7CC6-FEEF-B361-C9CF9E51BD6B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

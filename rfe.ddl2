@@ -15,20 +15,20 @@ select Approvers_RFEs_seq.nextval into :new.approver_rfe_id from dual;
 end; 
 /
 
-DROP SEQUENCE Contacts_RFEs_seq ; 
-create sequence Contacts_RFEs_seq 
+DROP SEQUENCE F15D4_RFE_CONTACTS_seq ; 
+create sequence F15D4_RFE_CONTACTS_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
-DROP TRIGGER Contacts_RFEs_PK_trig 
+DROP TRIGGER F15D4_RFE_CONTACTS_PK_trig 
 ; 
 
-create or replace trigger Contacts_RFEs_PK_trig 
-before insert on Contacts_RFEs
+create or replace trigger F15D4_RFE_CONTACTS_PK_trig 
+before insert on F15D4_RFE_CONTACTS
 for each row 
 begin 
-select Contacts_RFEs_seq.nextval into :new.contact_id from dual; 
+select F15D4_RFE_CONTACTS_seq.nextval into :new.rfe_employee_id from dual; 
 end; 
 /
 
@@ -235,6 +235,6 @@ CREATE INDEX task_id_FK_14 ON RFEs_Tasks(task_id) ;
 DROP INDEX rfe_id_FK_15 ;
 CREATE INDEX rfe_id_FK_15 ON Approvers_RFEs(rfe_id) ;
 DROP INDEX employee_id_FK_16 ;
-CREATE INDEX employee_id_FK_16 ON Contacts_RFEs(employee_id) ;
+CREATE INDEX employee_id_FK_16 ON F15D4_RFE_CONTACTS(employee_id) ;
 DROP INDEX rfe_id_FK_17 ;
-CREATE INDEX rfe_id_FK_17 ON Contacts_RFEs(rfe_id) ;
+CREATE INDEX rfe_id_FK_17 ON F15D4_RFE_CONTACTS(rfe_id) ;
