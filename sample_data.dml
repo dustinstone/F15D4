@@ -27,6 +27,7 @@ ALTER TRIGGER RFEs_Tasks_PK_trig DISABLE;
 INSERT INTO F15D4_Lab (lab_id, name) VALUES (1, 'Computing');
 INSERT INTO F15D4_Lab (lab_id, name) VALUES (2, 'Chemistry');
 INSERT INTO F15D4_Lab (lab_id, name) VALUES (3, 'Biology');
+INSERT INTO F15D4_Lab (lab_id, name) VALUES (4, 'Super Lab');
 
 INSERT INTO F15D4_Auth (auth_id, right) VALUES (1, 'View');
 INSERT INTO F15D4_Auth (auth_id, right) VALUES (2, 'Edit');
@@ -41,10 +42,10 @@ INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_
 VALUES (3, 'Y', 'Ms. Lab Director', 'myrongaines@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Lab Director', 1, 1);
 
 INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
-VALUES (4, 'Y', 'Mrs. Chairperson', 'pattyofurniture@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Chairperson', 1, 1);
+VALUES (4, 'Y', 'Mrs. Chairperson', 'pattyofurniture@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Chairperson', 4, 1);
 
 INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
-VALUES (5, 'Y', 'Ms. Exec Director', 'waiyumadtho@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Executive Director', 1, 1);
+VALUES (5, 'Y', 'Ms. Exec Director', 'waiyumadtho@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Executive Director', 4, 1);
 
 INSERT INTO F15D4_Employee (employee_id, active, name, email, office_num, phone_number, status, status_effective_date, type, lab_id, auth_id)
 VALUES (6, 'Y', 'Mr. Lab Director #2', 'mandyharpoons@gmail.com', '5555555555', '5555555555', '', SYSDATE, 'Lab Director', 1, 1);
